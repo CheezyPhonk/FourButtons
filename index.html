@@ -21,7 +21,7 @@
     }
 
     .color-btn {
-      padding: 10px 20px;
+      padding: 10px 16px;
       border: none;
       color: white;
       font-weight: bold;
@@ -29,6 +29,7 @@
       font-size: 16px;
     }
 
+    .black  { background-color: black;}
     .yellow { background-color: gold; }
     .green  { background-color: green; }
     .blue   { background-color: blue; }
@@ -50,6 +51,7 @@
 
   <!-- Buttons -->
   <div class="button-bar">
+    <button class="color-btn black"  onclick="showPage('black')">Black</button>
     <button class="color-btn yellow" onclick="showPage('yellow')">Yellow</button>
     <button class="color-btn green"  onclick="showPage('green')">Green</button>
     <button class="color-btn blue"   onclick="showPage('blue')">Blue</button>
@@ -57,22 +59,27 @@
   </div>
 
   <!-- Pages -->
-  <div id="yellow" class="page active">
-    <h1>Yellow Page</h1>
+    <div id="Home" class="page">
+    <h1>Home</h1>
+    <p>This is the green page with different content.</p>
+  </div>
+  
+  <div id="D.i" class="page active">
+    <h1>Testing</h1>
     <p>This is the yellow page with some content.</p>
   </div>
 
-  <div id="green" class="page">
+  <div id="D.ii" class="page">
     <h1>Green Page</h1>
     <p>This is the green page with different content.</p>
   </div>
 
-  <div id="blue" class="page">
+  <div id="D.iii" class="page">
     <h1>Blue Page</h1>
     <p>This is the blue page with more content.</p>
   </div>
 
-  <div id="red" class="page">
+  <div id="D.iv" class="page">
     <h1>Red Page</h1>
     <p>This is the red page with other content.</p>
   </div>
